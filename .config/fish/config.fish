@@ -1,6 +1,9 @@
 # ろーかるこんふぃぐくん
 source ~/.config/fish/config.local.fish
 
+# aliasや
+source ~/.config/fish/config.alias.fish
+
 # ディレクトリの色をかえるぞ
 export LSCOLORS=bxfxcxdxbxegedabagacad
 
