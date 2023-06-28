@@ -4,7 +4,6 @@ return {
     window_decorations = "RESIZE",
 
     hide_tab_bar_if_only_one_tab = true,
-    color_scheme = "downfox",
 
     --IME使えるようにするぜい！
     use_ime = true,
