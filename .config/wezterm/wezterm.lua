@@ -16,12 +16,7 @@ return {
         'Apple Color Emoji'
     },
 
-    window_background_opacity = 0.85,
+    window_background_opacity = 0.75,
 
-    color_scheme = "rose-pine-dawn",
-    colors = {
-        --background = "#fff4ea",
-        background = "#fdf5ec",
-        foreground = "#1c1c1c",
-    }
+    color_scheme = "rose-pine"
 }
