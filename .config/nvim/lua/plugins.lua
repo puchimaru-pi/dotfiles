@@ -16,8 +16,11 @@ vim.opt.rtp:prepend(lazypath)
 require("lazy").setup({
     --colorscheme
     {
-        'rose-pine/neovim',
-        name = 'rose-pine'
+        "rose-pine/neovim",
+        name = "rose-pine",
+        config = function()
+            require("pluginconfig/rose-pine")
+        end
     },
 
     -- Startup screen
@@ -26,7 +29,7 @@ require("lazy").setup({
 		event = "BufEnter",
 		config = function()
 			require("pluginconfig/alpha-nvim")
-		end,
+		end
 	},
 
     -- Lua Library
@@ -37,60 +40,60 @@ require("lazy").setup({
 
     --statusline
     {
-        'nvim-lualine/lualine.nvim',
-        event = 'VimEnter',
-        dependencies = { 'nvim-tree/nvim-web-devicons' },
+        "nvim-lualine/lualine.nvim",
+        event = "VimEnter",
+        dependencies = { "nvim-tree/nvim-web-devicons" },
         config = function()
-            --require('lualine').setup()
-            require('pluginconfig/lualine')
+            --require("lualine").setup()
+            require("pluginconfig/lualine")
         end
     },
 
     --auto completion
     {
-        'hrsh7th/nvim-cmp',
-        event = 'VimEnter',
+        "hrsh7th/nvim-cmp",
+        event = "VimEnter",
         config = function()
-            require('pluginconfig/nvim-cmp')
+            require("pluginconfig/nvim-cmp")
         end,
         dependencies = {
-            { 'hrsh7th/cmp-nvim-lsp' },
-			{ 'hrsh7th/cmp-nvim-lsp-signature-help' },
-			{ 'hrsh7th/cmp-nvim-lsp-document-symbol' },
-            { 'hrsh7th/cmp-buffer' },
-            { 'hrsh7th/cmp-path' },
-            { 'hrsh7th/cmp-emoji' },
-            { 'hrsh7th/cmp-calc' },
-            { 'uga-rosa/cmp-dictionary' },
-            { 'hrsh7th/cmp-cmdline' },
+            { "hrsh7th/cmp-nvim-lsp" },
+			{ "hrsh7th/cmp-nvim-lsp-signature-help" },
+			{ "hrsh7th/cmp-nvim-lsp-document-symbol" },
+            { "hrsh7th/cmp-buffer" },
+            { "hrsh7th/cmp-path" },
+            { "hrsh7th/cmp-emoji" },
+            { "hrsh7th/cmp-calc" },
+            { "uga-rosa/cmp-dictionary" },
+            { "hrsh7th/cmp-cmdline" },
             { 
-                'onsails/lspkind-nvim',
+                "onsails/lspkind-nvim",
                 config = function()
-                    require('pluginconfig/lspkind-nvim')
-                end,
+                    require("pluginconfig/lspkind-nvim")
+                end
             },  
         },
     },
 
     --auto pairs
     {
-        'windwp/nvim-autopairs',
-        event = 'VimEnter',
+        "windwp/nvim-autopairs",
+        event = "VimEnter",
         config = function()
-            require('pluginconfig/nvim-autopairs')
-        end,
+            require("pluginconfig/nvim-autopairs")
+        end
     },
 
     --telescope
     {
-        'nvim-telescope/telescope.nvim',
-        event = 'VimEnter',
+        "nvim-telescope/telescope.nvim",
+        event = "VimEnter",
             dependencies = {
             {
-                'nvim-telescope/telescope-frecency.nvim',
+                "nvim-telescope/telescope-frecency.nvim",
                 config = function()
-                    require('telescope').load_extension('frecency')
-                end,
+                    require("telescope").load_extension("frecency")
+                end
             },
         },
     },
