@@ -13,7 +13,7 @@ return {
     font = wezterm.font_with_fallback {
         { family = 'Hack Nerd Font', weight = 'Medium' },
         { family = 'HackGen Console NF', weight="Medium", stretch='Normal', style=Normal },
-        'Apple Color Emoji'
+        { family = 'Apple Color Emoji'}
     },
 
     window_background_opacity = 0.75,
