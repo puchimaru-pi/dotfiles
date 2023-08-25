@@ -1,7 +1,7 @@
 local wezterm = require 'wezterm'
 
 return {
-    window_decorations = "RESIZE",
+    window_decorations = 'RESIZE',
 
     hide_tab_bar_if_only_one_tab = true,
 
@@ -12,12 +12,12 @@ return {
     font_size = 16,
     font = wezterm.font_with_fallback {
         { family = 'Hack Nerd Font', weight = 'Medium' },
-        { family = 'HackGen Console NF', weight="Medium", stretch='Normal', style=Normal },
+        { family = 'HackGen Console NF', weight='Medium', stretch='Normal', style=Normal },
         --Macの絵文字
-        { family = 'Apple Color Emoji'}
+        'Apple Color Emoji'
     },
 
     window_background_opacity = 0.75,
 
-    color_scheme = "rose-pine"
+    color_scheme = 'rose-pine'
 }
