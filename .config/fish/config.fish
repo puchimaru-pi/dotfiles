@@ -1,8 +1,8 @@
 # ろーかるこんふぃぐくん
-source ~/.config/fish/config.local.fish
+source ~/.config/fish/local.fish
 
 # aliasや
-source ~/.config/fish/config.alias.fish
+source ~/.config/fish/alias.fish
 
 export LSCOLORS=gxfxcxdxbxegedabagacad
 
