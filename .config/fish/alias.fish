@@ -6,4 +6,4 @@ alias ls 'ls -G --color'
 alias ll 'ls -lG --color'
 alias la 'ls -laG --color'
 
-alias tty-clock 'clock'
+alias clock 'tty-clock'
