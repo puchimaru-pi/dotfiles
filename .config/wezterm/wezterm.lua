@@ -19,5 +19,5 @@ return {
 
     window_background_opacity = 0.75,
 
-    color_scheme = 'rose-pine'
+    color_scheme = 'rose-pine-dawn'
 }

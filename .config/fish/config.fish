@@ -5,7 +5,7 @@ source ~/.config/fish/local.fish
 source ~/.config/fish/alias.fish
 
 # colortheme
-fish_config theme choose "Rosé Pine Moon"
+fish_config theme choose "Rosé Pine Dawn"
 
 # Cargo使えるようするぞ
 set -U fish_user_paths $fish_user_paths $HOME/.cargo/bin
