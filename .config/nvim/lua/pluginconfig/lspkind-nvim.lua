@@ -20,7 +20,7 @@ require("lspkind").init({
 		Function = "󰊕",
 		Constructor = "",
 		Field = "",
-		Variable = "󰩃",
+		Variable = "",
 		Class = "󰠱",
 		Interface = "",
 		Module = "",
